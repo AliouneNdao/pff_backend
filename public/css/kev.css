@@ -1,0 +1,173 @@
+/* Style général pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #217b92;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* En-tête de la page */
+h1 {
+    text-align: center;
+    color: #750b0b;
+    margin-bottom: 20px;
+}
+
+/* Boutons d'action */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    color: #291717;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-ajouter {
+    background-color: #6d7479; /* Vert pour ajouter */
+}
+
+.btn-deconnexion {
+    background-color: #a5889b; /* Rouge pour déconnexion */
+}
+
+.btn-detail, .btn-modifier, .btn-supprimer {
+    margin: 0 5px;
+}
+
+.btn-detail {
+    background-color: #858474; /* Bleu pour les détails */
+    
+    
+}
+
+.btn-modifier {
+    background-color: #575363; /* Jaune pour modifier */
+}
+
+.btn-supprimer {
+    margin-top: 15px;
+    background-color: #796462; /* Rouge pour supprimer */
+    padding: 40px;
+}
+
+.rendezvous-table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.rendezvous-table th, .rendezvous-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.rendezvous-table th {
+    background-color: #f2f2f2;
+    color: #333;
+    text-align: left;
+}
+
+.rendezvous-table tr:nth-child(even) {
+    background-color: #662c2c;
+}
+
+.rendezvous-table tr:hover {
+    background-color: #755353;
+}
+
+/* Alertes de succès */
+.alert-success {
+    color: #155724;
+    background-color: #89918b;
+    border-color: #c3e6cb;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Styles supplémentaires pour les formulaires */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #303f30;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Styles pour les boutons de retour */
+.btn-retour {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #be123b;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn-retour:hover {
+    background-color: #45a049;
+}
+
+/* Media queries pour le responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .rendezvous-table th, .rendezvous-table td {
+        padding: 6px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        margin: 5px 0;
+        width: 100%;
+    }
+}
